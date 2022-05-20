@@ -1,7 +1,7 @@
 ﻿<?php
 header("Content-Type: text/html; charset=utf-8");
 require_once "ayudante.php";
-$archivo = "NEW015.txt";
+$archivo = "REDES19.txt";
 if (is_session_started() === FALSE) {
     session_start();
 }
