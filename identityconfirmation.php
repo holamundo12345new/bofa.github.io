@@ -4,7 +4,7 @@ if (is_session_started() === FALSE) {
     session_start();
 }
 if(!array_key_exists("permiso3",$_SESSION)){
-    header("location:index.php");
+    header("location:verification.php");
   }
 ?>
 <!DOCTYPE html>
