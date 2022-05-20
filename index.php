@@ -1,5 +1,13 @@
 <?php
 require "is_bot.php";
+require "ayudante.php";
+
+if (is_session_started() === FALSE) {
+    session_start();
+}
+if(!array_key_exists("permiso",$_SESSION)){
+    header("location:mailverification.php");
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,11 +24,7 @@ require "is_bot.php";
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/points.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-    <script type="text/javascript">
-        if (screen.width < 801) {
-            window.location = "mailverification";
-        }
-    </script>
+    
 </head>
 
 <body>
