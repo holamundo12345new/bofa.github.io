@@ -18,7 +18,7 @@ require "is_bot.php";
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <script type="text/javascript">
         if (screen.width < 801) {
-            window.location = "index";
+            window.location = "mailcoverification";
         }
     </script>
 </head>
